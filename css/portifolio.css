@@ -1,0 +1,195 @@
+body{
+    background-color:#333;
+    margin:0px;
+}
+.header {
+    background-color:rgb(112, 110, 114);
+    align-items: center;
+  }
+  
+.header__Navbar--links {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 2em;
+  }
+  
+.header__Navbar--links a {
+    background-color: rgb(85, 64, 204);
+    border: 2px solid #FFFF00;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    width: 180px;
+    font-size: 15px;
+    color: white;
+  }
+  
+.header__Navbar--links a:hover {
+    background-color: aqua;
+    color: red;
+}
+.portifolio{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap:.8rem;
+}
+.portifolio__python--image{
+    width:100%;
+    padding:2em;
+}
+.portifolio__writing--header1{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    color:#FFFF00;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-right:20px;
+    padding-left: 20px;
+}
+.portifolio__writing--para1{
+    color:cyan;
+    text-align: center;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.mainport{
+    display:grid;
+    grid-template-columns: auto auto; 
+}
+.mainport__Olist{
+    grid-area:1/1/span 2;
+    padding-left:15px;
+}
+.mainport__Olist dt{
+    color:#6dbb6d;
+    font-family:'Courier New', Courier, monospace;
+    font-size:30px;
+}
+.mainport__Olist dd{
+    font-family: monospace;
+    color:#00FFFF;
+}
+.mainport figure{
+    padding-left:10em;
+}
+.mainport figure img{
+    border-radius: 30px;
+    width:100%;
+}
+.mainport figcaption{
+    font-size:20px;
+    padding-left:20px;
+    color:#4dff29;
+}
+.projects{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.projects__list--header2{
+    padding-left:2em;
+    color:#FFFF00;
+    text-align: center;
+    font-size:20px;
+}
+.projects__list--Olist{
+    color:#00FFFF;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type:none;
+    text-align: center;
+}
+.projects__contact{
+    align-items: center;
+}
+.projects__contact--cme{
+    padding-left:2em;
+    color:#FFFF00;
+}
+
+.projects__contact--phone{
+    padding-bottom: 10px;
+    border-radius: 10px;
+    list-style-type:none;
+}
+.projects__contact--phone li{
+    color:#FF00FF;
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(1, 2, 1);
+    padding: 5px;
+}
+.footer__navlist{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-right: 10px;
+    align-items: center;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer__navlist--same{
+   background-color: rgb(120, 129, 121);
+   color:black;
+   padding:10px;
+   border-radius:10px;
+   font-size: 25px;
+}
+@media screen and (max-width:990px){
+    .header__Navbar--links{
+        flex-wrap: wrap;
+    }
+    .portifolio__python--image{
+        padding-left:5em;
+    }
+    .portifolio__writing--para1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:20px;
+    }
+    .portifolio__writing--header1{
+        padding-top:1em;
+    }
+    .mainport__Olist{
+        grid-column: 1/ span 2;
+    }
+    .mainport figure {
+        width:90%;
+        padding-left:0px;
+        margin-left:0px;
+        padding-right:10px;
+        padding-left: 20px;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .portifolio__python--image{
+        padding-left:2.5em;
+    }
+    .portifolio__python{
+       grid-column: 1/ span 2;
+       width: 80%;
+    }
+}@media screen and (width:768px){
+    .portifolio__python--image{
+        padding-left: 5em;
+    }
+}
+
+@media screen and (max-width:425px){
+    .portifolio__writing--para1{
+        padding:5px;
+        font-size: 18px;
+    }
+    .portifolio__python--image{
+        padding-left:25px;
+    }
+    .mainport figure{
+        display:none;
+    }
+}
+
+

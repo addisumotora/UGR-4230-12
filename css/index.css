@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    margin:0px;
+}
+.header{
+   background-color:rgb(112, 110, 114);
+   align-items: center;
+}
+   
+.header__Navbar--links{
+    display:flex;
+    list-style-type:none;
+    justify-content: center;
+    padding:2em;
+}  
+
+.header__Navbar--links a{
+    background-color:rgb(85, 64, 204);
+    border:2px solid #FFFF00;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding:15px;
+    margin:5px;
+    width:180px;
+    font-size: 15px;
+    color:white;
+}
+
+.header__Navbar--links a:hover{
+    background-color: aqua;
+    color:red;
+}
+.main1{
+    display:flex;
+}
+.main1__photo1--img1{
+   width:100%;
+   border-radius: 20px;
+   margin:1.5em;
+   
+}
+.main1__overview{
+   border-radius: 20px;
+}
+.main1__overview--header1{
+    padding-top: 10%;
+    color:#00FFFF;
+    text-align: center;
+}
+.main1__overview--para{
+    color:rgb(19, 204, 19);
+    text-align: center;
+    padding-left:3em;
+    padding-right:3em;
+}
+.main2{
+    display: flex;
+}
+.main2__description{
+    text-align: center;
+    padding-top:2em;
+}
+.main2__description--header1{
+    color: #00FF00;
+}
+.main2__description--para{
+    padding-left:3em;
+    padding-right: 3em;
+    color: orange;
+}
+.main2__photo2--img2{
+  max-width: 100%;
+  padding:1.5em;
+  border-radius: 20px;
+}
+
+.footer{
+    background-color: rgb(32, 14, 49);
+    padding:5px;
+    margin-top:10px;   
+}
+.footer__quetes{
+    color:rgb(230, 101, 27);
+    font-family: gabriola;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.footer__socialMedia{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type:none;
+}
+.footer__socialMedia a:hover{
+      width: 70px;
+      height: 70px;
+}
+@media screen and (max-width:839px){
+   .header__Navbar--links{
+       flex-wrap: wrap;
+   }
+   .main1{
+       flex-wrap: wrap;
+   }
+   .main1__photo1--img1{
+      margin-left:2px;
+      margin-right:2px;
+   }
+   .main2{
+       flex-wrap: wrap;
+   }
+   .main2__photo2--img2{
+    padding-left:15px;
+   }
+}
+@media screen and (max-width:475) {
+    .header{
+        width:100%;
+    }
+    .Navbar{
+        margin-right:0px;
+    }
+    .footer__quetes{
+        font-size: 30px;
+    }
+}
