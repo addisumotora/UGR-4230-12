@@ -162,7 +162,7 @@ tr:hover{
         padding-left: 5px;
     }
 }
-@media screen and (max-width:1300px){
+@media screen and (max-width:1100px){
     .Education{
         flex-wrap:wrap;
     }
